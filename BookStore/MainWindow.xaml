@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFB09893" Offset="0.522"/>
+                <GradientStop Color="#FF9E6153" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button  Content="Жанры"  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75"/>
+        <DataGrid Name="datagrid" HorizontalAlignment="Left" Height="206" Margin="241,87,0,0" VerticalAlignment="Top" Width="254" SelectionChanged="DataGrid_SelectionChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="229,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Поиск" HorizontalAlignment="Left" Margin="408,13,0,0" VerticalAlignment="Top" Width="74"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="165,58,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="93,141,0,0" VerticalAlignment="Top" Width="100" MouseDown="Image_MouseDown" Source="C:/Users/user/Desktop/images/master.jpg"/>
+
     </Grid>
 </Window>
